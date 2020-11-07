@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Tela2">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/mapa"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="50sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:tag="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UFV"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@id/button2"
+            android:onClick="Mudamapa"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:tag="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curitiba"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:onClick="Mudamapa"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:tag="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viçosa"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/button2"
+            android:onClick="Mudamapa"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:tag="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Localização"
+            android:textSize="20sp"
+            android:onClick="Localiza"
+            android:layout_below="@id/button2"
+            android:layout_marginTop="550dp"
+            android:layout_marginBottom="1dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
